@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMPORTANTE :D</title>
+  <style>
+    body {
+      background-image: url('C:/Users/Victor/Desktop/JOAO/CODIGOS/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      font-family: "Ubuntu", Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 5.0em;
+      margin: 0;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      letter-spacing: 2px;
+      font-family: "Dancing Script", cursive;
+    }
+
+    h2 {
+      font-size: 2.0em;
+      margin: 0;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      letter-spacing: 2px;
+      font-family: "Dancing Script", cursive;
+    }
+
+    #button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 20px 40px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: transform 0.2s ease-in-out;
+      font-size: 1.4em;
+      font-family: "Dancing Script", cursive;
+    }
+
+    .button.yes {
+      background: lightgreen;
+      color: darkgreen;
+    }
+
+    .button.no {
+      background: lightcoral;
+      color: maroon;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    function moveButton(x) {
+        var buttonWidth = x.offsetWidth;
+        var buttonHeight = x.offsetHeight;
+
+        var offsetX = Math.floor(Math.random() * (window.innerWidth - buttonWidth));
+        var offsetY = Math.floor(Math.random() * (window.innerHeight - buttonHeight));
+
+        offsetX = Math.max(0, offsetX); // Ensure the button stays within the left boundary
+        offsetY = Math.max(0, offsetY); // Ensure the button stays within the top boundary
+
+        x.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    }
+  </script>
+</head>
+<body>
+  <h1>Date sexta 20pm?</h1>
+  <h2>(isso aqui foi gerado por Inteligência Artificial...não se sinta especial rsrs)</h2>
+  
+  <div id="button-container">
+    <button class="button yes" onclick="window.open('https://www.youtube.com/watch?v=waU75jdUnYw', '_blank')">BORA :)</button>
+    <button class="button no" onmouseover="moveButton(this)">NAO :(</button>
+  </div>
+
+  <script>
+    // JavaScript code can be added here if needed
+  </script>
+</body>
+</html>
